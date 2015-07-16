@@ -14,17 +14,15 @@
   
     <form action="/results" method= "post">
 
- How expensive should the resort be?
+ How expensive should the hotel be?
  <br> 
 <input type="radio" name="price_range" value="cheapest">Cheapest<br>
 <input type="radio" name="price_range" value="not_too_cheap">Not too cheap<br>
 <input type="radio" name="price_range" value="not_too_expensive">Not too expensive<br>
 <input type="radio" name="place_range" value="most_expensive">Most expensive<br>
 
-  <br>
-   
+  <br>   
   What kind of area should the place be in?
-
   <br>    
 <input type="radio" name="place_type" value="mountain">Mountains<br>
 <input type="radio" name="place_type" value="beach">Beaches<br>
@@ -40,15 +38,16 @@
 <br>
     Which continent are you traveling to?
 <br>
-<input type="radio" name="continents" value="north_america">North America<br>
-<input type="radio" name="continents" value="south_america">South America<br>
-<input type="radio" name="continents" value="asia">Asian<br>
-<input type="radio" name="continents" value="africa">Africa<br>
-<input type="radio" name="continents" value="australia">Australia<br>
-<input type="radio" name="continents" value="antarctica">Antarctica<br>
-<input type="radio" name="continents" value="europe">Europe<br>
+<input type="radio" name="continents" value=1>Americas<br>
+<input type="radio" name="continents" value=2>Asian<br>
+<input type="radio" name="continents" value=3>Africa<br>
+<input type="radio" name="continents" value=4>Europe<br>
 <br>
-    
+  Should the people there speak english?(mostly)
+<br>
+<input type="radio" name="language" value="english">Yes<br>
+<input type="radio" name="language" value="other">No<br>
+      
       <input type="submit" name="submit" value="submit"><br>
     </div>
       </form>

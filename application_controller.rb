@@ -18,12 +18,15 @@ class MyApp < Sinatra::Base
   end
   
   post '/results' do
-    @to_return = choice_maker(params)
-    erb :results
+    choice_maker(params)
   end
   
   get '/template' do
     erb :template
+  end
+  
+  get '/quest' do
+    erb :quest
   end
 
 end
