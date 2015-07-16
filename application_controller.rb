@@ -21,5 +21,9 @@ class MyApp < Sinatra::Base
     @to_return = choice_maker(params)
     erb :results
   end
+  
+  get '/template' do
+    erb :template
+  end
 
 end

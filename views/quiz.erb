@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
   <title> Vacation Quiz </title>
@@ -8,30 +10,47 @@
     <h2> Please complete the following quiz
     </h2>
 
+  <div class="hello">
   
-  <form action="/results" method= "post">
+    <form action="/results" method= "post">
+
+ How expensive should the resort be?
+ <br> 
+<input type="radio" name="price_range" value="cheapest">Cheapest<br>
+<input type="radio" name="price_range" value="not_too_cheap">Not too cheap<br>
+<input type="radio" name="price_range" value="not_too_expensive">Not too expensive<br>
+<input type="radio" name="place_range" value="most_expensive">Most expensive<br>
+
+  <br>
+   
+  What kind of area should the place be in?
+
+  <br>    
 <input type="radio" name="place_type" value="mountain">Mountains<br>
 <input type="radio" name="place_type" value="beach">Beaches<br>
 <input type="radio" name="place_type" value="urban">Urban<br>
 <input type="radio" name="place_type" value="rural">Rural<br>
 <br>
-      
+  How warm/cool should the weather be?  
 <br>
-<input type="radio" name="climate" value="tropical">Tropical<br>
+<input class = "test" type="radio" name="climate" value="tropical">Tropical<br>
 <input type="radio" name="climate" value="dry">Dry<br>
 <input type="radio" name="climate" value="temperate">Temperate<br>
 <input type="radio" name="climate" value="cold">Cold<br>
 <br>
-      
+    Which continent are you traveling to?
 <br>
-<input type="radio" name="price_range" value="cheapest">Cheapest<br>
-<input type="radio" name="price_range" value="not_too_cheap">Not too cheap<br>
-<input type="radio" name="price_range" value="not_too_expensive">Not too expensive<br>
-<input type="radio" name="place_range" value="most_expensive">Most expensive<br>
+<input type="radio" name="continents" value="north_america">North America<br>
+<input type="radio" name="continents" value="south_america">South America<br>
+<input type="radio" name="continents" value="asia">Asian<br>
+<input type="radio" name="continents" value="africa">Africa<br>
+<input type="radio" name="continents" value="australia">Australia<br>
+<input type="radio" name="continents" value="antarctica">Antarctica<br>
+<input type="radio" name="continents" value="europe">Europe<br>
 <br>
-
+    
       <input type="submit" name="submit" value="submit"><br>
-      
+    </div>
       </form>
 </body>
 </html>
