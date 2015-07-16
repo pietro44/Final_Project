@@ -1,13 +1,21 @@
 body {
-    background-color: #99CCFF
+    background-color: 
 }
 
 h1 {
+   background-color:#558C89;
   text-align: center;
   text-decoration: underline;
+  padding-top:15px;
 
 }
 a { 
   text-align: center;
     display:block
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  
 }

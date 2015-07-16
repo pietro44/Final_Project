@@ -13,6 +13,9 @@ class MyApp < Sinatra::Base
   get '/quiz' do
     erb :quiz
   end
+  get '/test' do
+    erb :test
+  end
   
 
 end
