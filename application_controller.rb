@@ -17,5 +17,8 @@ class MyApp < Sinatra::Base
     erb :test
   end
   
+  post '/results' do
+    choice_maker(params)
+  end
 
 end
