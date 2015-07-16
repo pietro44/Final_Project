@@ -1,0 +1,13 @@
+body {
+    background-color: #99CCFF
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+
+}
+a { 
+  text-align: center;
+    display:block
+}

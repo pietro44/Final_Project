@@ -10,16 +10,9 @@ class MyApp < Sinatra::Base
   get '/results' do
     erb :results
   end
-  get '/test' do
-    erb :test
+  get '/quiz' do
+    erb :quiz
   end
-  get '/gotosleep' do
-    @name = ["Pietro", "Bob", "Joe", "Greg", "Aatish", "Gidon", "Hal", "Alex"]
-    erb :sleep
-  end
-  get '/doge' do
-    @doge1 = Doge.new("Sparkles")
-    erb :results
-end
   
+
 end
