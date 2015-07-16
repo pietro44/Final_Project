@@ -1,17 +1,17 @@
 def choice_maker(parameters)
-  groups = [mountains = {
+  groups = [mountain = {
     mountain1: 0,
     mountain2: 0,
     mountain3: 0,
     mountain4: 0
     },
-  cities = {
+  urban = {
     amsterdam: 0,
     johannesburg: 0,
     city3: 0,
     city4:0
     },
-  beaches = {
+  beach = {
     beach1: 0,
     beach2: 0,
     beach3: 0,
