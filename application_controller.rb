@@ -18,7 +18,8 @@ class MyApp < Sinatra::Base
   end
   
   post '/results' do
-    choice_maker(params)
+    @to_return = choice_maker(params)
+    erb :results
   end
 
 end
