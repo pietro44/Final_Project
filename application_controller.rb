@@ -20,5 +20,9 @@ class MyApp < Sinatra::Base
   post '/results' do
     choice_maker(params)
   end
+  
+  get '/template' do
+    erb :template
+  end
 
 end
