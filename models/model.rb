@@ -77,3 +77,4 @@ def pick(locs)
   new = locs.sort {|one, two| one.weight <=> two.weight}
   new.first
 end
+

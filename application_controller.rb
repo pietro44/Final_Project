@@ -18,20 +18,20 @@ class MyApp < Sinatra::Base
   end
   
   post '/results' do
-    amsterdam = Place.new("amsterdam", "city", "europe", "temperate", "not_too_expensive")
-    tokyo = Place.new("tokyo", "city", "asia", "temperate", "expensive")
-    johannesburg = Place.new("johannesburg", "city", "africa", "dry", "cheapest")
-    minneapolis = Place.new("minneapolis", "city", "americas", "temperate", "not_too_cheap")
+    amsterdam = Place.new("Amsterdam", "city", "europe", "temperate", "not_too_expensive")
+    tokyo = Place.new("Tokyo", "city", "asia", "temperate", "expensive")
+    johannesburg = Place.new("Johannesburg", "city", "africa", "dry", "cheapest")
+    minneapolis = Place.new("Minneapolis", "city", "americas", "temperate", "not_too_cheap")
 
-    asturias_cantabria = Place.new("austurias/cantabria", "rural", "europe", "temperate", "cheapest")
-    oichijuku = Place.new("oichijuku", "rural", "asia", "temperate", "not_too_expensive")
-    essaouira = Place.new("essaouira", "rural", "africa", "dry", "not_too_cheap")
-    yosemite = Place.new("yosemite", "rural", "americas", "temperate", "expensive")
+    asturias_cantabria = Place.new("Austurias/cantabria", "rural", "europe", "temperate", "cheapest")
+    oichijuku = Place.new("Oichijuku", "rural", "asia", "temperate", "not_too_expensive")
+    essaouira = Place.new("Essaouira", "rural", "africa", "dry", "not_too_cheap")
+    yosemite = Place.new("Yosemite", "rural", "americas", "temperate", "expensive")
 
-    canazei = Place.new("canazei", "mountain", "europe", "cold", "expensive")
-    gyalthang = Place.new("gyalthang", "mountain", "asia", "temperate", "not_too_cheap")
-    table_mountain = Place.new("table mountain", "mountain", "africa", "hot", "not_too_expensive")
-    coeur_dalene = Place.new("coeur d'alene", "mountain", "americas", "temperate", "not_too_expensive")
+    canazei = Place.new("Canazei", "mountain", "europe", "cold", "expensive")
+    gyalthang = Place.new("Gyalthang", "mountain", "asia", "temperate", "not_too_cheap")
+    table_mountain = Place.new("Table Mountain", "mountain", "africa", "hot", "not_too_expensive")
+    coeur_dalene = Place.new("Coeur D'alene", "mountain", "americas", "temperate", "not_too_expensive")
 
     rabbit_beach = Place.new("Rabbit Beach", "beach", "europe", "temperate", "expensive")
     white_beach = Place.new("White Beach", "beach", "americas", "temperate", "not_too_expensive")
