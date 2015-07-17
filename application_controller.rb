@@ -29,4 +29,7 @@ class MyApp < Sinatra::Base
     erb :quest
   end
 
+  get '/sample' do
+    erb :sample
+  end
 end
