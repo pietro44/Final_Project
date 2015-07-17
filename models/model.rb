@@ -1,5 +1,5 @@
 class Place
-  attr_accessor :type, :name, :continent, :climate, :price, :weight
+  attr_accessor :type, :name, :continent, :climate, :price, :weight, :language
   def initialize(name,type,cont,climate,price,language)
     @name = name
     @type = type

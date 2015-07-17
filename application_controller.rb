@@ -49,10 +49,6 @@ class MyApp < Sinatra::Base
     erb :template
   end
   
-  get '/quest' do
-    erb :quest
-  end
-
   get '/sample' do
     erb :sample
   end
