@@ -30,7 +30,7 @@ end
 # anse_lazio = Place.new("Anse Lazio", "beach", "africa", "hot", "not_too_expensive")
 # fulong_beach = Place.new("Fulong Beach", "beach", "asia", "temperate", "not_too_cheap")
 
-#laces = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
+# places = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
 
 def choice_maker(parameters, locs)  # weights the places
   locs.each {|place| place.weight += 2 if parameters["place_type"] == place.type}
@@ -40,6 +40,6 @@ def choice_maker(parameters, locs)  # weights the places
 end
 
 def pick(locs)  # picks place with the right weight 
-  new = locs.sort! {|one, two| one.weight <=> two.weight}
-  new.first
+  new = locs.sort {|one, two| two.weight <=> one.weight}
+  return new.first
 end
