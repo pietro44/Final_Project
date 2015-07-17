@@ -1,51 +1,37 @@
-# # def choice_maker(parameters)
-# #  groups ={:mountain =>{
-# #     mountain1: 0,
-# #     mountain2: 0,
-# #     mountain3: 0,
-# #     mountain4: 0
-# #     },
-# #  :urban => {
-# #     amsterdam: 0,
-# #     johannesburg: 0,
-# #     city3: 0,
-# #     city4:0
-# #     },
-# #  :beach =>{
-# #     beach1: 0,
-# #     beach2: 0,
-# #     beach3: 0,
-# #     beach4: 0
-# #     },
-# #  :rural =>{
-# #     rural1: 0,
-# #     rural2: 0,
-# #     rural3: 0,
-# #     rural4: 0
-# #     }
-# #    }
-# #   parameters.each do |key, value|
-# #     if groups[parameters["place_value"].to_sym][(key).to_sym]
-# #       groups[parameters["place_value"].to_sym][(key).to_sym] += 1
-# #     end
-# #   end
-# #   return groups[:urban]
-# # end
-
-# # class Place
-#   attr_accessor :type, :name, :continent, :climate, :price
-#   def initialize(name,type,cont,climate,price)
-#     @name = name
-#     @type = type
-#     @continent = cont
-#     @climate = climate
-#     @price = price
-#     @weight = 0
+# def choice_maker(parameters)
+#  groups ={:mountain =>{
+#     mountain1: 0,
+#     mountain2: 0,
+#     mountain3: 0,
+#     mountain4: 0
+#     },
+#  :urban => {
+#     amsterdam: 0,
+#     johannesburg: 0,
+#     city3: 0,
+#     city4:0
+#     },
+#  :beach =>{
+#     beach1: 0,
+#     beach2: 0,
+#     beach3: 0,
+#     beach4: 0
+#     },
+#  :rural =>{
+#     rural1: 0,
+#     rural2: 0,
+#     rural3: 0,
+#     rural4: 0
+#     }
+#    }
+#   parameters.each do |key, value|
+#     if groups[parameters["place_value"].to_sym][(key).to_sym]
+#       groups[parameters["place_value"].to_sym][(key).to_sym] += 1
+#     end
 #   end
+#   return groups[:urban]
 # end
 
-<<<<<<< HEAD
-=======
 class Place
   attr_accessor :type, :name, :continent, :climate, :price, :weight
   def initialize(name,type,cont,climate,price)
@@ -58,7 +44,6 @@ class Place
   end
 end
 
->>>>>>> a8e854ea56e037a474764c0aba7ea412db4fd5f0
 # amsterdam = Place.new("amsterdam", "city", "europe", "temperate", "not_too_expensive")
 # tokyo = Place.new("tokyo", "city", "asia", "temperate", "expensive")
 # johannesburg = Place.new("johannesburg", "city", "africa", "dry", "cheapest")
@@ -79,16 +64,6 @@ end
 # anse_lazio = Place.new("Anse Lazio", "beach", "africa", "hot", "not_too_expensive")
 # fulong_beach = Place.new("Fulong Beach", "beach", "asia", "temperate", "not_too_cheap")
 
-<<<<<<< HEAD
-# places = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
-
-# def choice_maker(parameters, locs)
-#   if parameters[]
-#   end
-# end
-# choice_maker({"type" => "mountain"}, places)
-# puts table_mountain.weight
-=======
 #laces = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
 
 def choice_maker(parameters, locs)
@@ -102,4 +77,3 @@ def pick(locs)
   new = locs.sort {|one, two| one.weight <=> two.weight}
   new.first
 end
->>>>>>> a8e854ea56e037a474764c0aba7ea412db4fd5f0
