@@ -56,7 +56,19 @@ yosemite = Place.new("yosemite", "rural", "americas", "temperate", "expensive")
 
 canazei = Place.new("canazei", "mountain", "europe", "cold", "expensive")
 gyalthang = Place.new("gyalthang", "mountain", "asia", "temperate", "not_too_cheap")
-table_mountain = Place.new("table mountain", "mountain", "africa", "dry", "not_too_expensive")
+table_mountain = Place.new("table mountain", "mountain", "africa", "hot", "not_too_expensive")
 coeur_dalene = Place.new("coeur d'alene", "mountain", "americas", "temperate", "not_too_expensive")
 
-rabbit_beach = Place.new("rabbit beach" )
+rabbit_beach = Place.new("Rabbit Beach", "beach", "europe", "temperate", "expensive")
+white_beach = Place.new("White Beach", "beach", "americas", "temperate", "not_too_expensive")
+anse_lazio = Place.new("Anse Lazio", "beach", "africa", "hot", "not_too_expensive")
+fulong_beach = Place.new("Fulong Beach", "beach", "asia", "temperate", "not_too_cheap")
+
+places = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
+
+def choice_maker(parameters, locs)
+  if parameters[]
+  end
+end
+choice_maker({"type" => "mountain"}, places)
+puts table_mountain.weight
