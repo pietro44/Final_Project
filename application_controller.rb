@@ -18,7 +18,7 @@ class MyApp < Sinatra::Base
   end
   
   post '/results' do
-    amsterdam = Place.new("Amsterdam", "city", "europe", "temperate", "not_too_expensive","no")
+    amsterdam = Place.new("Amsterdam", "city", "europe", "temperate", "not_too_expensive","yes")
     tokyo = Place.new("Tokyo", "city", "asia", "temperate", "expensive","no")
     johannesburg = Place.new("Johannesburg", "city", "africa", "dry", "cheapest","yes")
     minneapolis = Place.new("Minneapolis", "city", "americas", "temperate", "not_too_cheap","yes")
@@ -38,7 +38,12 @@ class MyApp < Sinatra::Base
     anse_lazio = Place.new("Anse Lazio", "beach", "africa", "hot", "not_too_expensive", "yes")
     fulong_beach = Place.new("Fulong Beach", "beach", "asia", "temperate", "not_too_cheap", "no")
     
-    places = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
+    inchydoney = Place.new("InchyDoney", "beach", "europe", "cold", "not_too_expensive", "yes")
+    canterbury_region = Place.new("Canterbury region of New Zealand", "rural", "asia", "hot", "expensive", "yes")
+    
+    
+    
+    places = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach, inchydoney, canterbury_region]
 
     choice_maker(params, places)
     @choice = pick(places)
