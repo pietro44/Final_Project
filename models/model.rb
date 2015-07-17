@@ -1,4 +1,3 @@
-
 class Place
   attr_accessor :type, :name, :continent, :climate, :price, :weight
   def initialize(name,type,cont,climate,price)
@@ -34,14 +33,13 @@ end
 #laces = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
 
 def choice_maker(parameters, locs)  # weights the places
-  locs.each {|place| place.weight += 2 if parameters["place_value"] == place.type}
+  locs.each {|place| place.weight += 2 if parameters["place_type"] == place.type}
   locs.each {|place| place.weight += 1 if parameters["price_range"] == place.price}
   locs.each {|place| place.weight += 1 if parameters["climate"] == place.climate}
   locs.each {|place| place.weight += 2 if parameters["continents"] == place.continent}
 end
 
 def pick(locs)  # picks place with the right weight 
-  new = locs.sort {|one, two| one.weight <=> two.weight}
+  new = locs.sort! {|one, two| one.weight <=> two.weight}
   new.first
 end
-
