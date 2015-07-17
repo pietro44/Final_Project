@@ -44,6 +44,21 @@
 #   end
 # end
 
+<<<<<<< HEAD
+=======
+class Place
+  attr_accessor :type, :name, :continent, :climate, :price, :weight
+  def initialize(name,type,cont,climate,price)
+    @name = name
+    @type = type
+    @continent = cont
+    @climate = climate
+    @price = price
+    @weight = 0
+  end
+end
+
+>>>>>>> a8e854ea56e037a474764c0aba7ea412db4fd5f0
 # amsterdam = Place.new("amsterdam", "city", "europe", "temperate", "not_too_expensive")
 # tokyo = Place.new("tokyo", "city", "asia", "temperate", "expensive")
 # johannesburg = Place.new("johannesburg", "city", "africa", "dry", "cheapest")
@@ -64,6 +79,7 @@
 # anse_lazio = Place.new("Anse Lazio", "beach", "africa", "hot", "not_too_expensive")
 # fulong_beach = Place.new("Fulong Beach", "beach", "asia", "temperate", "not_too_cheap")
 
+<<<<<<< HEAD
 # places = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
 
 # def choice_maker(parameters, locs)
@@ -72,3 +88,18 @@
 # end
 # choice_maker({"type" => "mountain"}, places)
 # puts table_mountain.weight
+=======
+#laces = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
+
+def choice_maker(parameters, locs)
+  locs.each {|place| place.weight += 1 if parameters["place_value"] == place.type}
+  locs.each {|place| place.weight += 1 if parameters["price_range"] == place.price}
+  locs.each {|place| place.weight += 1 if parameters["climate"] == place.climate}
+  locs.each {|place| place.weight += 1 if parameters["continents"] == place.continent}
+end
+
+def pick(locs)
+  new = locs.sort {|one, two| one.weight <=> two.weight}
+  new.first
+end
+>>>>>>> a8e854ea56e037a474764c0aba7ea412db4fd5f0
