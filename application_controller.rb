@@ -23,7 +23,7 @@ class MyApp < Sinatra::Base
     johannesburg = Place.new("Johannesburg", "city", "africa", "dry", "cheapest")
     minneapolis = Place.new("Minneapolis", "city", "americas", "temperate", "not_too_cheap")
 
-    asturias_cantabria = Place.new("Austurias/cantabria", "rural", "europe", "temperate", "cheapest")
+    asturias_cantabria = Place.new("Austurias/Cantabria", "rural", "europe", "temperate", "cheapest")
     oichijuku = Place.new("Oichijuku", "rural", "asia", "temperate", "not_too_expensive")
     essaouira = Place.new("Essaouira", "rural", "africa", "dry", "not_too_cheap")
     yosemite = Place.new("Yosemite", "rural", "americas", "temperate", "expensive")
@@ -31,7 +31,7 @@ class MyApp < Sinatra::Base
     canazei = Place.new("Canazei", "mountain", "europe", "cold", "expensive")
     gyalthang = Place.new("Gyalthang", "mountain", "asia", "temperate", "not_too_cheap")
     table_mountain = Place.new("Table Mountain", "mountain", "africa", "hot", "not_too_expensive")
-    coeur_dalene = Place.new("Coeur D'alene", "mountain", "americas", "temperate", "not_too_expensive")
+    coeur_dalene = Place.new("Coeur d'Alene", "mountain", "americas", "temperate", "not_too_expensive")
 
     rabbit_beach = Place.new("Rabbit Beach", "beach", "europe", "temperate", "expensive")
     white_beach = Place.new("White Beach", "beach", "americas", "temperate", "not_too_expensive")
