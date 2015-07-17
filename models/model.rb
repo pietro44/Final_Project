@@ -1,36 +1,3 @@
-# def choice_maker(parameters)
-#  groups ={:mountain =>{
-#     mountain1: 0,
-#     mountain2: 0,
-#     mountain3: 0,
-#     mountain4: 0
-#     },
-#  :urban => {
-#     amsterdam: 0,
-#     johannesburg: 0,
-#     city3: 0,
-#     city4:0
-#     },
-#  :beach =>{
-#     beach1: 0,
-#     beach2: 0,
-#     beach3: 0,
-#     beach4: 0
-#     },
-#  :rural =>{
-#     rural1: 0,
-#     rural2: 0,
-#     rural3: 0,
-#     rural4: 0
-#     }
-#    }
-#   parameters.each do |key, value|
-#     if groups[parameters["place_value"].to_sym][(key).to_sym]
-#       groups[parameters["place_value"].to_sym][(key).to_sym] += 1
-#     end
-#   end
-#   return groups[:urban]
-# end
 
 class Place
   attr_accessor :type, :name, :continent, :climate, :price, :weight
@@ -66,14 +33,14 @@ end
 
 #laces = [amsterdam, tokyo, johannesburg, minneapolis, asturias_cantabria, oichijuku, essaouira, yosemite, canazei, gyalthang, table_mountain, coeur_dalene, rabbit_beach, white_beach, anse_lazio, fulong_beach]
 
-def choice_maker(parameters, locs)
-  locs.each {|place| place.weight += 1 if parameters["place_value"] == place.type}
+def choice_maker(parameters, locs)  # weights the places
+  locs.each {|place| place.weight += 2 if parameters["place_value"] == place.type}
   locs.each {|place| place.weight += 1 if parameters["price_range"] == place.price}
   locs.each {|place| place.weight += 1 if parameters["climate"] == place.climate}
-  locs.each {|place| place.weight += 1 if parameters["continents"] == place.continent}
+  locs.each {|place| place.weight += 2 if parameters["continents"] == place.continent}
 end
 
-def pick(locs)
+def pick(locs)  # picks place with the right weight 
   new = locs.sort {|one, two| one.weight <=> two.weight}
   new.first
 end
