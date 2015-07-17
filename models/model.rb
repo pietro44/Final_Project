@@ -1,12 +1,13 @@
 class Place
   attr_accessor :type, :name, :continent, :climate, :price, :weight
-  def initialize(name,type,cont,climate,price)
+  def initialize(name,type,cont,climate,price,language)
     @name = name
     @type = type
     @continent = cont
     @climate = climate
     @price = price
     @weight = 0
+    @language = language
   end
 end
 
@@ -37,6 +38,7 @@ def choice_maker(parameters, locs)  # weights the places
   locs.each {|place| place.weight += 1 if parameters["price_range"] == place.price}
   locs.each {|place| place.weight += 1 if parameters["climate"] == place.climate}
   locs.each {|place| place.weight += 2 if parameters["continents"] == place.continent}
+  locs.each {|place| place.weight += 1 if parameters["language"] == place.language}
 end
 
 def pick(locs)  # picks place with the right weight 
